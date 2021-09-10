@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MenuUtama">
+
+    <FrameLayout
+        android:id="@+id/bt_adaptasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="videoadaptasi"
+        app:layout_constraintBottom_toTopOf="@+id/bt_larangan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_bahaya">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="307dp"
+            android:layout_height="117dp"
+            android:src="@drawable/bgbutton" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Adaptasi Baru Covid-19"
+            android:textColor="#CD000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bt_larangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="videolarangan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_adaptasi">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="307dp"
+            android:layout_height="117dp"
+            android:src="@drawable/bgbutton" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Larangan Di Sekolah"
+            android:textColor="#CD000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bt_apaitu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="videoapaitu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_bahaya"
+        app:layout_constraintTop_toTopOf="@+id/bt_bahaya">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="307dp"
+            android:layout_height="117dp"
+            android:src="@drawable/bgbutton" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Apa Itu Covid-19"
+            android:textColor="#CD000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/bt_bahaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="videobahaya"
+        app:layout_constraintBottom_toTopOf="@+id/bt_adaptasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="307dp"
+            android:layout_height="117dp"
+            android:src="@drawable/bgbutton" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Bahaya Covid 19"
+            android:textColor="#CD000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="333dp"
+        android:layout_height="225dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/anakkecil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_larangan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
