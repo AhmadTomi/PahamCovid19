@@ -29,6 +29,7 @@ class VideoPlayerActivity : AppCompatActivity() {
             override fun onReady(youTubePlayer: YouTubePlayer) {
                 val videoId = intent.getStringExtra("idvideo").toString()
                 youTubePlayer.loadVideo(videoId, 0f)
+                youTubePlayer.play()
             }
         })
 
